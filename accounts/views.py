@@ -6,11 +6,14 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('Home Page')
+    return render(request, 'accounts/dashboard.html')
 
 def products(request):
-    return HttpResponse('products')
+    return render(request, 'accounts/product.html')
 
 
 def customer(request):
-    return HttpResponse('customer')
+    return render(request, 'accounts/customer.html')
+
+
+
